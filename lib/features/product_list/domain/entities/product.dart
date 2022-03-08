@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:equatable/equatable.dart';
 
 class Product extends Equatable {
@@ -13,5 +15,5 @@ class Product extends Equatable {
   });
 
   @override
-  List<Object?> get props => [title, price, imageSrc, id];
+  List<Object> get props => [title, price, imageSrc, id];
 }
